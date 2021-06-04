@@ -24,7 +24,5 @@ shadows/directional_shadow/soft_shadow_quality=3
 shadows/shadows/soft_shadow_quality=4
 shadows/shadows/soft_shadow_quality.mobile=3
 environment/ssao/quality=3
-anti_aliasing/quality/msaa=3
-anti_aliasing/quality/screen_space_aa=1
 occlusion_culling/use_occlusion_culling=true
 environment/defaults/default_environment="res://default_env.tres"
