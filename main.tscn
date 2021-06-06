@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://scifi/moonless_golf_2k.hdr" type="Texture2D" id=1]
 [ext_resource path="res://scifi/scifihall.glb" type="PackedScene" id=2]
+[ext_resource path="res://Character.tscn" type="PackedScene" id=3]
 
 [sub_resource type="PanoramaSkyMaterial" id=1]
 panorama = ExtResource( 1 )
@@ -49,7 +50,11 @@ script = null
 environment = SubResource( 3 )
 script = null
 
-[node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.80246, 0 )
-current = true
-script = null
+[node name="Character" parent="." instance=ExtResource( 3 )]
+transform = Transform( 0.00943015, 0, 0, 0, 0.00943015, 0, 0, 0, 0.00943015, 0, 0.636415, 0 )
+
+[node name="AnimationPlayer" parent="Character/Gizmo/m4" index="1"]
+blend_times = [  ]
+
+[editable path="Character"]
+[editable path="Character/Gizmo/m4"]
